@@ -15,17 +15,17 @@ El missatge Discover s'envia per Broadcast. El missatge Offer es pot enviar per 
 
 2.1. Especifica els ports UDP font i destí utilitzats pel client i pel servidor DHCP.
 
-El client utilitza el port UDP 68 com a port d'origen i el port 67 com a port de destinació quan envia missatges al servidor. El servidor utilitza el port UDP 67 com a port d'origen i el port 68 com a port de destinació quan respon al client.
+El client utilitza el port UDP 68 com a port d'origen i el port 67 com a port de destinació quan envia missatges al servidor. El servidor utilitza el port UDP 67 com a port d'origen i el port 68 com a port de destinació quan respon al client.![alt text](image-12.png)
 
 2.2. Quin camp de la capçalera DHCP s'utilitza per identificar unívocament la targeta de xarxa (NIC) del client?
 
 El camp és chaddr (Client Hardware Address), que conté l'adreça MAC de la targeta de xarxa del client. També existeix l'opció 61, anomenada Client Identifier, que es pot utilitzar per identificar el client.
-
+![alt text](image-11.png)
 2.3. Identifica el número o nom de les opcions DHCP encarregades de transmetre la porta d'enllaç per defecte (Router), els servidors DNS i el nom de domini.
 - Opció 3 (Router): indica la porta d'enllaç per defecte.
 - Opció 6 (Domain Name Server): indica els servidors DNS.
 - Opció 15 (Domain Name): indica el nom de domini de la xarxa.
-
+![alt text](image-10.png)
 
 ## Bloc 2: Configuració del Servidor Kea DHCP (kea-dhcp4.conf)
 Redacta l'estructura del fitxer de configuració JSON per al dimoni kea-dhcp4 complint els requisits següents:
